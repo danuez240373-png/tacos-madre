@@ -180,7 +180,7 @@ export const images = {
 
   // ---- Visit ------------------------------------------------------------
   visit: {
-    src: unsplash('1574482211311-45a2169db57c', 1400),
+    src: local('photos/Visit-test.jpg'),
     alt: 'Diners gathered at long tables under string lights on a warm evening',
     stock: true,
   },
