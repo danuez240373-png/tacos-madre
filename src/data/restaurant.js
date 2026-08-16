@@ -16,7 +16,7 @@
 
 const restaurant = {
   name: 'Tacos Madres',
-  showDemoNotice: true,
+  showDemoNotice: false,
 
   primaryOrder: 'uberEats',
 
