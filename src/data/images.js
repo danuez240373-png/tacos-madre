@@ -19,27 +19,28 @@
 const unsplash = (id, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&q=70&w=${w}`;
 
+const local = (path) => `${import.meta.env.BASE_URL}${path}`;
 export const images = {
   // ---- Hero -------------------------------------------------------------
   hero: {
-    src: '/photos/tacos-madres-hero-logo.jpg',
+    src: local('photos/tacos-madres-hero-logo.jpg'),
     alt: 'Tacos Madres embroidered logo patch, floral design in turquoise, orange and magenta on black',
     stock: false,
   },
 
   // ---- Featured dishes (keys referenced from restaurant.featured) --------
   chilaquiles: {
-    src: '/photos/chilaquiles.jpg',
+    src: local('photos/chilaquiles.jpg'),
     alt: 'Plate of chilaquiles rojos topped with scrambled egg, queso fresco and crema',
     stock: false,
   },
   asadaFries: {
-    src: '/photos/asada-fries.jpg',
+    src: local('photos/asada-fries.jpg'),
     alt: 'Carne asada fries topped with guacamole, pico de gallo and crema',
     stock: false,
   },
   tacos: {
-    src: '/photos/tacos.jpg',
+    src: local('photos/tacos.jpg'),
     alt: 'Plate of carne asada tacos with salsa, onion, cilantro and lime',
     stock: false,
   },
@@ -49,20 +50,20 @@ export const images = {
     stock: true,
   },
   torta: {
-    src: '/photos/torta.jpg',
+    src: local('photos/torta.jpg'),
     alt: 'Torta sliced in half showing meat, avocado, cabbage and melted cheese on a grilled roll',
     stock: false,
   },
 
   // ---- Menu category art (one per tab) ----------------------------------
   menuCombos: {
-    src: '/photos/combos.jpg',
+    src: local('photos/combos.jpg'),
     alt: 'Clay bowl of red chile broth with tender meat, served with a chile-rimmed agua fresca, a basket of warm tortillas, and dried oregano and chile flake garnish on a decorated metal tray',
     objectPosition: 'center 30%',
     stock: false,
   },
   menuFries: {
-    src: '/photos/asada-fries.jpg',
+    src: local('photos/asada-fries.jpg'),
     alt: 'Carne asada fries topped with guacamole, pico de gallo and crema',
     stock: false,
   },
@@ -72,35 +73,35 @@ export const images = {
     stock: true,
   },
   menuTacos: {
-    src: '/photos/tacos.jpg',
+    src: local('photos/tacos.jpg'),
     alt: 'Plate of carne asada tacos with salsa, onion, cilantro and lime',
     stock: false,
   },
   menuBurritos: {
-    src: '/photos/burrito.jpg',
+    src: local('photos/burrito.jpg'),
     alt: 'Burrito smothered in melted white cheese and sauce, served in a hand-painted terracotta dish',
     objectPosition: 'center 40%',
     stock: false,
   },
   menuTortas: {
-    src: '/photos/torta.jpg',
+    src: local('photos/torta.jpg'),
     alt: 'Torta sliced in half showing meat, avocado, cabbage and melted cheese on a grilled roll',
     stock: false,
   },
   menuQuesadillas: {
-    src: '/photos/quesadilla.jpg',
+    src: local('photos/quesadilla.jpg'),
     alt: 'Stacked quesadilla layered with melted cheese and shredded beef in red sauce, topped with cilantro and onion, on a hand-painted terracotta plate with lime wedges',
     objectPosition: 'center 20%',
     stock: false,
   },
   menuGorditas: {
-    src: '/photos/gordita.jpg',
+    src: local('photos/gordita.jpg'),
     alt: 'Gordita split open and filled with a savory red guisado, held in a to-go paper-lined box',
     objectPosition: 'center 0%',
     stock: false,
   },
   menuDrinks: {
-    src: '/photos/agua-de-pepino.jpg',
+    src: local('photos/agua-de-pepino.jpg'),
     alt: 'Tall cucumber agua fresca in a tajín-and-chamoy-rimmed cup, garnished with lemon and cucumber slices, on a wooden table with a colorful paper flower backdrop',
     objectPosition: 'center 35%',
     stock: false,
